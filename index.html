@@ -116,7 +116,6 @@
             flex-shrink: 0;
             margin-top: -80px !important;
             /*强制应用上移 */
-
         }
 
         .nav-btn {
@@ -133,6 +132,19 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 60px; /* 设置固定高度 */
+        }
+
+        .nav-btn .permission-text {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #888;
         }
 
         .nav-btn:hover {
@@ -185,6 +197,7 @@
             .nav-btn {
                 padding: 18px 28px;
                 font-size: 20px;
+                height: 70px; /* 调整高分辨率下的高度 */
             }
         }
 
@@ -200,9 +213,8 @@
             .nav-btn {
                 padding: 14px 20px;
                 font-size: 17px;
+                height: 55px; /* 调整小屏幕下的高度 */
             }
-
-
         }
 
         @media (max-width: 480px) {
@@ -222,8 +234,8 @@
             .nav-btn {
                 padding: 13px 18px;
                 font-size: 16px;
+                height: 50px; /* 调整更小屏幕下的高度 */
             }
-
         }
 
         /* 添加动画效果 */
@@ -248,7 +260,6 @@
             animation-delay: 0.2s;
             opacity: 0;
         }
-
 
         /* 添加底部版权信息 */
         footer {
@@ -300,9 +311,9 @@
 
             <button class="nav-btn"
                 onclick="openLink(' https://365.kdocs.cn/wo/sl/v11FZm1a')">
-                综合管理概况
+                综合管理概况<br />
                 <span class="permission-text">需管理权限</span>
-        </button>
+            </button>
         </div>
 
         <div>首次登录需授权办公账号</div>
